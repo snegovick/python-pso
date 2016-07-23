@@ -1,0 +1,32 @@
+import os
+from setuptools import setup
+
+# Utility function to read the README file.
+# Used for the long_description.  It's nice, because now 1) we have a top level
+# README file and 2) it's easier to type in the README file than to put a raw
+# string in below ...
+def read(fname):
+    return open(os.path.join(os.path.dirname(__file__), fname)).read()
+
+setup(
+    name = "pso",
+    version =
+    author = "Konstantin Kirik (snegovick)",
+    author_email = "snegovick@uprojects.org",
+    description = ("Particle Swarm Optimization implementation."),
+    license = "MIT",
+    keywords = "PSO, particles, swarm",
+    url = "http://snegovick.me",
+    packages=['pso'],
+    scripts=[],
+    long_description=read('README.md'),
+    dependency_links = [],
+    install_requires = [],
+    classifiers=[
+        "Development Status :: 3 - Alpha",
+        "License :: OSI Approved :: MIT License",
+        "Intended Audience :: Developers",
+        "Programming Language :: Python",
+    ],
+)
+
